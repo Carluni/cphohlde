@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import "tailwindcss";
+
+
+
+@theme {
+  --font-sans: "Lexend", ui-sans-serif, system-ui;
+  
+  --font-lexend: "Lexend", sans-serif;
+}
+
+:root{
+  --tile-size: 10vw
+}
+
+h1 {
+  @apply text-3xl font-extrabold font-lexend;
+}
+.w-base {
+  @apply w-[calc(var(--tile-size))];
+}
+.h-base {
+  @apply h-[calc(var(--tile-size))];
+}
+.w-double {
+  @apply w-[calc(var(--tile-size)*2)];
+}
+.h-double {
+  @apply h-[calc(var(--tile-size)*2)];
+}
+
+.w-triple {
+  @apply w-[calc(var(--tile-size)*3)];
+}
+.h-triple {
+  @apply h-[calc(var(--tile-size)*3)];
+}
+.w-quad {
+  @apply w-[calc(var(--tile-size)*4)];
+}
+.h-quad {
+  @apply h-[calc(var(--tile-size)*4)];
+}
